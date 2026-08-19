@@ -1,0 +1,6 @@
+import type { Metadata } from "next";
+import { NabexContactBand, NabexFooter, NabexHeader, PageHero } from "../../site-components";
+
+const title="Webサイト制作｜NABEX"; const description="NABEXのWebサイト制作。価値が伝わり、問い合わせにつながるサイトを企画・制作します。";
+export const metadata:Metadata={title,description,openGraph:{title,description,images:[]},twitter:{title,description,images:[]}};
+export default function WebPage(){return <main className="nabex-home subpage"><NabexHeader/><PageHero theme="nabex" eyebrow="WEB CREATION" title="伝わるサイトは、事業を動かす。" lead="見た目だけで終わらない。価値が届き、次の行動につながるWebサイトへ。"/><section className="nabex-detail-intro"><p>DESIGN FOR BUSINESS</p><h2>らしさを言葉と形に。<br/><span>成果につながる設計を。</span></h2><p>会社やサービスの魅力を整理し、訪れた人が知りたい情報へ迷わずたどり着けるサイトを制作します。スマートフォンでの見やすさも大切にします。</p></section><section className="nabex-service-cards"><article><b>01</b><h3>企画・構成</h3><p>目的、届けたい相手、必要な情報を整理し、サイト全体の道筋を設計します。</p></article><article><b>02</b><h3>デザイン・制作</h3><p>ブランドらしさと使いやすさを両立し、PC・スマートフォンに対応します。</p></article><article><b>03</b><h3>公開・運用支援</h3><p>公開後の更新や改善も見据え、長く活用できるサイトづくりを支えます。</p></article></section><section className="product-types"><p>SITE TYPES</p><h2>目的に合わせたWeb制作。</h2><div><span>コーポレートサイト</span><span>サービスサイト</span><span>ランディングページ</span><span>採用サイト</span><span>店舗・事業紹介</span><span>サイトリニューアル</span></div></section><NabexContactBand/><NabexFooter/></main>}
