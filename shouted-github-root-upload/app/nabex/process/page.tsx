@@ -1,0 +1,6 @@
+import type { Metadata } from "next";
+import { NabexContactBand, NabexFooter, NabexHeader, PageHero } from "../../site-components";
+
+const title="制作の流れ｜NABEX"; const description="NABEXのアプリ開発・Webサイト制作のご相談から公開、改善までの進め方をご案内します。";
+export const metadata:Metadata={title,description,openGraph:{title,description,images:[]},twitter:{title,description,images:[]}};
+export default function ProcessPage(){return <main className="nabex-home subpage"><NabexHeader/><PageHero theme="nabex" eyebrow="OUR PROCESS" title="迷わせない、制作プロセス。" lead="目的を共有し、小さく確かめながら、使えるものへ育てます。"/><section className="process-timeline"><article><b>01</b><div><small>DISCOVERY</small><h2>聞く・知る</h2><p>つくりたいもの、お困りごと、使う人、事業の目的を丁寧に伺います。</p></div></article><article><b>02</b><div><small>PLANNING</small><h2>整理・設計する</h2><p>必要な機能や情報を整理し、画面やサイト全体の構成を設計します。</p></div></article><article><b>03</b><div><small>BUILD</small><h2>形にする</h2><p>途中段階でも確認できる形を共有し、認識を合わせながら制作します。</p></div></article><article><b>04</b><div><small>LAUNCH</small><h2>公開・運用する</h2><p>公開や利用開始を支え、使い方や運用についても分かりやすくご案内します。</p></div></article><article><b>05</b><div><small>GROW</small><h2>改善する</h2><p>利用後の声や変化に合わせて、より良いプロダクトへ育てます。</p></div></article></section><NabexContactBand/><NabexFooter/></main>}

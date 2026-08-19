@@ -1,0 +1,6 @@
+import type { Metadata } from "next";
+import { NabexContactBand, NabexFooter, NabexHeader, PageHero } from "../../site-components";
+
+const title="アプリ開発｜NABEX"; const description="NABEXのアプリ開発。アイデア整理から設計・開発・改善まで伴走します。";
+export const metadata:Metadata={title,description,openGraph:{title,description,images:[]},twitter:{title,description,images:[]}};
+export default function AppsPage(){return <main className="nabex-home subpage"><NabexHeader/><PageHero theme="nabex" eyebrow="APP DEVELOPMENT" title="使われるアプリを、つくる。" lead="アイデアを整理し、触って分かる、続けて使えるプロダクトへ。"/><section className="nabex-detail-intro"><p>FROM IDEA TO PRODUCT</p><h2>構想から改善まで、<br/><span>ひとつのチームで。</span></h2><p>業務を効率化するアプリ、新しいサービスのためのアプリ。目的と使う人を丁寧に整理し、本当に必要な機能から形にします。</p></section><section className="nabex-service-cards"><article><b>01</b><h3>企画・要件整理</h3><p>曖昧なアイデアを、ユーザーと事業の視点から実現可能な計画に整理します。</p></article><article><b>02</b><h3>UI / UX設計</h3><p>迷わず使える画面と操作を設計し、完成前にイメージを共有します。</p></article><article><b>03</b><h3>開発・改善</h3><p>必要な機能を確実に実装し、利用後の声をもとに継続的に育てます。</p></article></section><section className="product-types"><p>WHAT WE BUILD</p><h2>こんなアプリ開発に。</h2><div><span>業務管理アプリ</span><span>予約・受付アプリ</span><span>社内ツール</span><span>新規Webサービス</span><span>顧客向けアプリ</span><span>既存業務のデジタル化</span></div></section><NabexContactBand/><NabexFooter/></main>}
