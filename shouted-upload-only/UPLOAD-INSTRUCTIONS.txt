@@ -1,0 +1,10 @@
+GitHubへアップロードするだけの完成版です。
+
+1. shoutedリポジトリに現在ある2つのフォルダを削除します。
+2. このフォルダ内のファイルをすべて、リポジトリの一番上へアップロードします。
+3. index.html、assets、company、contact、nabexなどが一番上に直接見える状態にします。
+4. Settings → Pagesを開きます。
+5. Sourceは「Deploy from a branch」、Branchは「main」、Folderは「/(root)」を選んでSaveします。
+6. 数分後、https://lpkdomo.github.io/shouted/ を開きます。
+
+GitHub Actions、ビルド、Node.jsの設定は不要です。
